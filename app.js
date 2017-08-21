@@ -30,7 +30,23 @@ app.controller("sidenavController", function ($scope) {
         user: 'Dinesh',
         when: '3:08PM',
         notes: " I'll be"
+    }, {
+        face: imagePath,
+        user: 'Dinesh',
+        when: '3:08PM',
+        notes: " I'll be"
     }];
+    $scope.serachUser = function () {
+        if ($scope.search == "") {
+            return $scope.messages;
+        } else {
+            return $scope.messages.filter(function (obj) {
+                return (obj.user.indexOf($scope.search) > -1);
+            }).map(function (obj) {
+                return obj;
+            });
+        }
+    }
 });
 
 

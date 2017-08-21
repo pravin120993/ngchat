@@ -26,7 +26,8 @@
             </md-list-item> 
   <md-content>
     <md-list>
-      <md-list-item class="md-3-line" ng-repeat="item in messages">
+     
+      <md-list-item class="md-3-line" ng-repeat="item in messages" ng-click="null">
         <img ng-src="{{item.face}}?{{$index}}" class="md-avatar" alt="{{item.who}}">
         <div class="md-list-item-text">
           <h3 style="display:inline-block;font-weight:500;">{{item.what}}</h3>

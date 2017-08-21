@@ -41,7 +41,7 @@ app.controller("sidenavController", function ($scope) {
             return $scope.messages;
         } else {
             return $scope.messages.filter(function (obj) {
-                return (obj.user.indexOf($scope.search) > -1);
+                return (obj.user.toLowerCase().indexOf($scope.search.toLowerCase()) > -1);
             }).map(function (obj) {
                 return obj;
             });

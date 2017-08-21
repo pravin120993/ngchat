@@ -23,14 +23,28 @@
                 <md-button flex="">
                     {{menu}}
                 </md-button>
-            </md-list-item>
+            </md-list-item> 
+  <md-content>
+    <md-list>
+      <md-list-item class="md-3-line" ng-repeat="item in messages">
+        <img ng-src="{{item.face}}?{{$index}}" class="md-avatar" alt="{{item.who}}">
+        <div class="md-list-item-text">
+          <h3 style="display:inline-block;font-weight:500;">{{item.what}}</h3>
+          <h4 style="display:inline-block; float:right;color:#a9aeb0;">{{item.when}}</h4><br>
+          <h4  style="display:inline-block;color:#a9aeb0;">{{item.who}}</h4>         
+          <h4 style="display:inline-block;color:#a9aeb0;">{{item.notes}}</h4  >
+        </div>
+        <md-divider md-inset ng-if="!$last"></md-divider>
+      </md-list-item>
+    </md-list>
+  </md-content>
         </md-list> 
     </md-sidenav>
     <md-content flex="" layout-padding="4">
         <div ng-controller="initController">
             {{ appName }}
         </div>
-    </md-content>
+    </md-content>    
 </div>
 </body>
 </html>

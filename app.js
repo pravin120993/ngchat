@@ -2,18 +2,18 @@ var app = angular.module("chatapp", ["ngMaterial", "ui.router"]);
 app.controller("initController", function ($scope) {
     $scope.appName = "NG-CHAT";
 });
-app.config(function($stateProvider,$urlRouterProvider) {
+app.config(function ($stateProvider, $urlRouterProvider) {
     $urlRouterProvider.otherwise('/home');
- $stateProvider.state('register',{
-    url: '/register',
-    templateUrl: 'register.html'
-  }).state('home',{
-    url: '/home',
-    template: '<h3>hello world!</h3>'
-  });
+    $stateProvider.state('register', {
+        url: '/register',
+        templateUrl: 'register.html'
+    }).state('home', {
+        url: '/home',
+        template: '<h3>hello world!</h3>'
+    });
 });
 app.controller("sidenavController", function ($scope) {
-    var imagePath = 'https://material.angularjs.org/latest/img/list/60.jpeg';
+    var imagePath = 'img/list/60.jpg';
     $scope.search = "";
     $scope.messages = [{
         face: imagePath,
@@ -59,7 +59,7 @@ app.controller("sidenavController", function ($scope) {
     }
 });
 app.controller("registrationController", function ($scope) {
-    
+
 });
 
 

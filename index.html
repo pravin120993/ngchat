@@ -33,6 +33,247 @@
         md-list {
             padding: 0;
         }
+        body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  background-color: #DDE0E5;
+}
+a
+{
+  text-decoration:none;
+  color:#827DCF;
+  -webkit-transition: 0.3s ease-out;
+    transition: 0.3s ease-out;
+}
+a:hover
+{
+  color:black
+}
+
+h2
+{
+  text-align:center;
+  font-weight:100;
+  font-size:24px;
+  margin-top:20px;
+}
+.card {
+     z-index: 1;
+    position: absolute;
+    width: 98%;
+    height: 620px;
+    margin: 0 auto;
+    margin-top: 20px;
+    background-color: white;
+    border-radius: 10px;
+    -webkit-box-shadow: 0px 51px 82px -21px rgba(0, 0, 0, 0.61);
+    -moz-box-shadow: 0px 51px 82px -21px rgba(0, 0, 0, 0.61);
+    box-shadow: 0px 51px 82px -21px rgba(0, 0, 0, 0.27);
+    bottom: 0;
+}
+
+.banner {
+  position: absolute;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  height: 67px;
+  width: 100%;
+background-color: #3f51b5;
+  font-family: 'Quicksand', sans-serif;
+}
+
+.banner h1 {
+  color: white;
+  font-size: 25px;
+  margin-left: 65px;
+  margin-top: 17.5px;
+  font-weight: 400;
+}
+
+.banner h1 b {
+  font-weight: 800;
+}
+
+.cog {
+  fill: white; 
+  height: 27px;
+  width: 27px;
+  position: absolute;
+  top: 21px;
+  right: 15px;
+}
+
+.contact-photo {
+  position: absolute;
+  top: 15.5px;
+  left: 15px;
+  height: 35px;
+  width: 35px;
+  border-radius: 50%;
+  background-color: black;
+  background-image: url("https://filmshotfreezer.files.wordpress.com/2011/07/untitled-1.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.main-text-area {
+  position: absolute;
+  top: 67px;
+  height: 253px;
+  width: 100%;
+}
+
+.time-stamp {
+  position: relative;
+  width: 100%;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 19px;
+  font-size: 12px;
+  font-weight: normal;
+  color: #7C7C7C;
+}
+
+.message {
+  position: relative;
+  display: block;
+  height: 54px;
+  width: 75%;
+  font-size: 17px;
+  font-weight: 400;
+  border-radius: 10px;
+}
+
+.message.from {
+  color: white;
+ background-color: #3f51b5;
+  margin-left: 26px;
+  margin-bottom: 15px;
+}
+
+.message.to {
+  color: #7C7C7C;
+  background-color: #F1F1F1;
+  margin-right: 26px;
+  float: right;
+}
+
+.message p {
+  text-align: left;
+  padding-top: 14px;
+  padding-left: 20px;
+  margin: 0;
+}
+
+.message:after {
+  position: absolute;
+  width: 0;
+  height: 0;
+  background-color: transparent;
+  content: "";
+  margin-top: -9px;
+}
+
+.message.from:after {
+     border-top: 16px solid transparent;
+    border-right: 23px solid #3f51b5;
+    border-top-left-radius: 20px;
+    margin-left: -14px;
+    margin-top: 4px;
+}
+
+.message.to:after {    
+    border-left: 24px solid #f1f1f1;
+    border-top-right-radius: 20px;
+    /*margin-left: 1168px;*/
+    border-top: 16px solid transparent;
+    border-top-left-radius: 20px;
+    margin-top: 4px;
+}
+
+.delivered {
+  float: right;
+  display: block;
+  clear: both;
+  color: #d3d3d3;
+  font-weight: 400;
+  margin-right: 26px;
+  margin-top: 9px;
+  font-size: 14px;
+}
+
+.input-bar {
+  position: absolute;
+  bottom: 0;
+  height: 80px;
+  width: 100%;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  background-color: #F1F1F1;
+}
+
+.input-bar-inner {
+  margin: 15px;
+  height: 49px;
+  border-radius: 7px;
+  background-color: white;
+}
+
+.input-bar-inner i {
+  color: #d3d3d3;
+  font-size: 25px;
+  margin-top: 12px;
+  margin-left: 20px;
+  -moz-transform: scaleX(-1);
+  -o-transform: scaleX(-1);
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1) rotate(-180deg);
+}
+
+.input-bar-inner h6 {
+  float: right;
+  font-size: 20px;
+  margin-top: 10px;
+  margin-right: 27px;
+  color: #827DCF;
+  font-weight: 400;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+}
+
+.input-bar-inner h6,
+.input-bar-inner i,
+.cog {
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+}
+
+.input-bar-inner h6:hover,
+.input-bar-inner i:hover,
+.cog:hover {
+  opacity: 0.3;
+  cursor: pointer;
+}
+
+#input-text {
+padding: 14px;
+    font-size: 17px;
+    vertical-align: middle;
+    /* margin-left: 10px; */
+    /* margin-bottom: 8px; */
+    width: 300px;
+    font-family: inherit;
+    font-weight: 400;
+    border: none;
+    border-right: solid 2px #F1F1F1;
+}
+#input-text:focus {
+  outline: none;
+}
     </style>
 </head>
 <body ng-app="chatapp" layout="row" flex="">

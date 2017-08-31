@@ -1,5 +1,24 @@
-<div>
-<h1>Register</h1>
-<input type="text" name="email">
-<button>Submit</button>
+<div layout="column" layout-align="center center" layout-fill>
+    <div class="loginBox md-whiteframe-z1" layout="column">
+        <md-toolbar>
+            <h2 class="md-toolbar-tools"><span>Register</span></h2>
+        </md-toolbar>
+        <md-content class="md-padding">
+            <form ng-submit="register(regForm)" ng-controller="registrationController" layout="column">
+                <md-input-container>
+                    <label>Email</label>
+                    <input type="email" ng-model="regForm.username" required/>
+                </md-input-container>
+                <md-input-container>
+                    <label>Password</label>
+                    <input type="password" ng-model="regForm.password" required/>
+                </md-input-container>
+                <div layout="row" layout-align="center center" style="padding-top:20px">
+                    <button type='submit' class="md-button md-raised md-primary">Login</button>
+                    <div flex="flex"></div>
+                    <md-button md-no-ink="md-no-ink">Forgot Password</md-button>
+                </div>
+            </form>
+        </md-content>
+    </div>
 </div>

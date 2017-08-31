@@ -1,0 +1,17 @@
+.input-search {
+    padding: 7px 0;
+    font-size: 15px;
+    z-index: 1;
+    text-align: left;
+    -webkit-user-select: text;
+    -moz-user-select: text;
+    -ms-user-select: text;
+    user-select: text;
+    line-height: 20px;
+    font-size: 15px;
+    min-height: 20px;
+    border: none;
+    width: 100%;
+    outline: none;
+    font-weight: normal;
+}

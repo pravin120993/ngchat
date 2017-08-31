@@ -4,14 +4,14 @@ app.controller("initController", function ($scope) {
 });
 app.config(function ($stateProvider, $urlRouterProvider) {
     $urlRouterProvider.otherwise('/home');
- $stateProvider.state('register',{
-    url: '/register',
-    templateUrl: 'chatcontent.html'  
-    
-  }).state('home',{
-    url: '/home',
-       templateUrl: 'register.html'
-  });
+    $stateProvider.state('register', {
+        url: '/register',
+        templateUrl: 'chatcontent.html'
+
+    }).state('home', {
+        url: '/home',
+        templateUrl: 'register.html'
+    });
 });
 app.controller("sidenavController", function ($scope) {
     var imagePath = 'img/list/60.jpg';
@@ -36,7 +36,7 @@ app.controller("sidenavController", function ($scope) {
         user: 'Ashok',
         when: '3:08PM',
         notes: "OK"
-    },{
+    }, {
         face: imagePath,
         user: 'Dinesh',
         when: '3:08PM',
@@ -59,8 +59,11 @@ app.controller("sidenavController", function ($scope) {
         }
     }
 });
-app.controller("registrationController", function ($scope) {
-
+app.controller("registrationController", function ($scope, $state) {
+    $scope.regForm = {};
+    $scope.register = function () {
+        $state.go('register');
+    }
 });
 
 
